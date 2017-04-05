@@ -357,7 +357,11 @@ describe('linter', function () {
                 spaceBeforeBrace: {
                     enabled: true,
                     style: 'one_space'
-                }
+                },
+                idSelector: {
+                    enabled: true,
+                    exclude: []
+                },
             };
 
             const linter = new Linter(source, testPath, config);
